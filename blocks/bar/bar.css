@@ -1,0 +1,8 @@
+.bar {
+    align-self: flex-start;
+    margin-left: 200px;
+    text-align: center;
+    line-height: 2;
+    font-size: 42px;
+    font-family: "tc";
+}

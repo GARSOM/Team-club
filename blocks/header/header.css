@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    position: relative;
+    min-height: 800px;
+    max-height: 856px;
+    background-color: black;
+    background-image: url(/logo/Rastra.png);
+    background-size: contain;
+    background-size: 120px;
+}
