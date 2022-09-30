@@ -1,6 +1,8 @@
 .page {
-    min-width: 1920px;
+    min-width: 1903px;
     max-width: 1600px;
     margin: 0 auto;
     font-family: 'tc', 'Helvetica Neue', Arial, sans-serif;
+    overflow: hidden;
+    background-color: black;
 }

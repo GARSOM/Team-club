@@ -1,0 +1,9 @@
+.subtitle{
+    margin: 0px auto 0px auto;
+    text-align: center;
+    width: 1248px;
+    line-height: 1.8;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    align-self: flex-start;
+}

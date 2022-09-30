@@ -2,103 +2,249 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
-    <title>Team club</title>
-<script>
-    (function(d, w, c) {
-        w.ChatraID = 'S7gE9k7JWJqjNyHdh';
-        var s = d.createElement('script');
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        s.async = true;
-        s.src = 'https://call.chatra.io/chatra.js';
-        if (d.head) d.head.appendChild(s);
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Team club</title>
+  <script>
+    (function (d, w, c) {
+      w.ChatraID = 'S7gE9k7JWJqjNyHdh';
+      var s = d.createElement('script');
+      w[c] = w[c] || function () {
+        (w[c].q = w[c].q || []).push(arguments);
+      };
+      s.async = true;
+      s.src = 'https://call.chatra.io/chatra.js';
+      if (d.head) d.head.appendChild(s);
     })(document, window, 'Chatra');
-</script>
+  </script>
 </head>
 
 <body>
-    <div class="page">
-    
+  <div class="page">
+
     <header class="header">
-        <nav class="bar">
-            <a class="bar__link"  href="#">Бронирование</a>
-            <a class="bar__link" href="#">Зал</a>
-            <a class="bar__link" href="#">Цены</a>
-            <a class="bar__link" href="#">Железо</a>
-            <a class="bar__link" href="#">Турниры</a>
-        </nav>
-        <h1 class="title">Компьютерный клуб в центре Краснодара</h1>
+      <img class="logo_place_header" src="/logo/Rastra.png">
+
+      <nav class="bar">
+        <a class="bar__link" href="#">Бронирование</a>
+        <a class="bar__link" href="#">Зал</a>
+        <a class="bar__link" href="#">Цены</a>
+        <a class="bar__link" href="#">Турниры</a>
+        <a class="bar__link" href="#">Игры</a>
+        <div class="header__contacts">
+          <a href="#" class="header__number">8(988)387-67-87</a>
+        </div>
+      </nav>
     </header>
     <main class="content">
-        <section class="booking">
-            <h2 class="title__page">Бронирование</h2>
-        </section>
+      <div class="video">
+        <img class="rotation__logo rotation" src="/logo/Rastra.png">
+        <video class="video__media" src="/images/Video.mp4" autoplay muted loop></video>
+      </div>
+      <section class="booking">
+        <h2 class="title__page">Бронирование</h2>
+        <form action="#" method="post" oninput='daysoutput.value=dayscount.value'>
+          <label for="name">Ваше имя</label>
+          <input type="name" id="name" name="name" value="Иван Иванов">
+          <div class="one-third-width">
+            <label for="number">Номер Компьютера</label>
+            <input type="number" min="1" max="45" id="number" name="number" value="1">
+          </div>
+          <div class="two-third-width">
+            <label for="time">Дата</label>
+            <input type="time" id="time" name="time" value="22:30">
+          </div>
+          <div class="half-width">
+            <label for="hours">Количество часов</label>
+            1 <input type="range" id="hours" name="hours" min="1" max="24" step="1"> 24
+          </div>
+          <div class="half-width output-area">
+            <!--<output name='daysoutput'>-->
+          </div>
+          <div class="buttons">
+            <input type="submit" value="Забронировать">
+          </div>
+        </form>
+      </section>
+      <section class="zal">
+        <h2 class="title__page">Зал</h2>
+        <div class="standart">
+          <p class="subtitle">Стандарт</p>
+          <div class="techniques">
+            <h3 class="subtitle">Наше железо и девайсы</h3>
+            <ul class="cards">
+              <li class="cards__item">
+                <img class="cards__image" src="/images/Видеокарта стандарт.jpg" alt="Видеокарта">
+                <h4 class="cards__title">Видеокарта</h4>
+                <p class="cards__description">Nvidea 1660 super</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="images/Процессор стандарт.jpg" alt="Процессор">
+                <h4 class="cards__title">Процессор</h4>
+                <p class="cards__description">i5 11400f</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="images/Монитор стандарт.jpg" alt="Монитор">
+                <h4 class="cards__title">Монитор</h4>
+                <p class="cards__description">
+                <p>Диагональ 24"
+                <p>
+                  Full HD 1920 x 1080
+                <p> 144Hz</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="images/Наушники стандарт.jpg" alt="Наушники">
+                <h4 class="cards__title">Наушники</h4>
+                <p class="cards__description">Hyper x cloud 2
+                <p>Звуковая карта Sound blaster play 3 </p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="images/0ns_sg0YM0w.jpg" alt="Клавиатура">
+                <h4 class="cards__title">Клавиатура</h4>
+                <p class="cards__description">Механическая клавиатура Blade PRO Kailh Red</p>
+              </li>
+              <li class="cards__item">
+                <img class="cards__image" src="images/1380966_v01_b.jpg" alt="Мышь">
+                <h4 class="cards__title">Мышь</h4>
+                <p class="cards__description">logitech G102</p>
+              </li>
+            </ul>
+          </div>
+          <img class="zal__photo_1" src="/images/-Ih7raaIc6k.jpg">
+          <img class="zal__photo_1" src="/images/M82P8PSoZ4A.jpg">
+          <img class="zal__photo_1" src="/images/MuKFJ4cEbWM.jpg">
+          <img class="zal__photo_1" src="/images/KMahzX5S39Q.jpg">
+          <img class="zal__photo_1" src="/images/M3V1IYaIcRA.jpg">
+          <img class="zal__photo_1" src="/images/image-18-02-20-05-49-7.jpeg">
+          <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+          <img class="zal__photo_1" src="/images/image-18-02-20-05-49-6.jpeg">
+        </div>
 
+      </section>
+      <div class="standart">
+        <p class="subtitle">VIP</p>
+        <div class="techniques">
+          <h3 class="subtitle">Наше железо и девайсы</h3>
+          <ul class="cards">
+            <li class="cards__item">
+              <img class="cards__image" src="/images/Видеокарта стандарт.jpg" alt="Видеокарта">
+              <h4 class="cards__title">Видеокарта</h4>
+              <p class="cards__description">Nvidea 2070 super</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image" src="images/Процессор стандарт.jpg" alt="Процессор">
+              <h4 class="cards__title">Процессор</h4>
+              <p class="cards__description">i7 11400f</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image" src="images/e8Xf1xylKCw.jpg" alt="Монитор">
+              <h4 class="cards__title">Монитор</h4>
+              <p class="cards__description">
+              <p>alienware
+              <p>Диагональ 27"
+              <p>
+                Full HD 1920 x 1080
+              <p> 244Hz</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image" src="images/Без названия.jpg" alt="Наушники">
+              <h4 class="cards__title">Наушники</h4>
+              <p class="cards__description">logitech g pro x
+              <p>Звуковая карта Sound blaster play 3 </p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image" src="images/1_logitechg413_tkl_se.jpg" alt="Клавиатура">
+              <h4 class="cards__title">Клавиатура</h4>
+              <p class="cards__description">Механическая клавиатура Logitech G413</p>
+            </li>
+            <li class="cards__item">
+              <img class="cards__image" src="images/obzor-logitech-g403-prodigy-wireless-01.jpg" alt="Мышь">
+              <h4 class="cards__title">Мышь</h4>
+              <p class="cards__description">logitech G403</p>
+            </li>
+          </ul>
+        </div>
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+        <img class="zal__photo_1" src="/images/ZyRumA4AxB8.jpg">
+      </div>
+      <section class="price">
+        <h2 class="title__page">Цены</h2>
+        
+      </section>
+      <section class="tournament">
+        <h2 class="title__page">Турниры / Игры</h2>
+        <p class="tournament__brief">Ниже представлен список игр доступный в нашем клубе.
+          Если на карточке указана дата, это означает, что по данной дисциплине будет проведен турнир. 
+         Все вопросы можно задавать в форме - в правом нижнем углу</p>
+        <div class="tournament__columns">
 
+        <img class="tournament__photo" src="/images/Без имени-1 копия.png">
+        <img class="tournament__photo" src="/images/Dota 2 для сайта.png">
+        <img class="tournament__photo" src="/images/valik.png">
+        <img class="tournament__photo" src="/images/fifa-22-hd-phone-wallpaper-1080x1920-uhdpaper.com-123.1_b.jpg">
+      </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__columns">
 
+          <div class="footer__column footer__column_content_copyright">
+            <img class="logo_place_footer" src="/logo/Rastra.png">
+            <p class="footer__author">&copy; Гарик Камалян</p>
+          </div>
+          <iframe class="map" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=209164181364" width="760"
+            height="400" frameborder="0"></iframe>
+          <!--<div class="footer__column footer__column_content_info">
+            <h4 class="footer__column-heading">Телефон клуба</h4>
+            <nav>
+              <ul class="footer__column-links">
+                <li>
+                  <a class="footer__column-link" href="#">8(988) 387-67-87</a>
+                </li>
+                <li><a class="footer__column-link" href="#">Концепция</a>
+                </li>
+                <li><a class="footer__column-link" href="#">Наставники</a>
+                </li>
+              </ul>
+            </nav>
+          </div> -->
+          <div class="footer__column footer__column_content_social">
+            <h4 class="footer__column-heading">Соцсети</h4>
+            <nav>
+              <ul class="footer__column-links">
+                <li>
+                  <a class="footer__column-link" href="#">
+                    <img class="footer__social-icon" src="./images/facebook_color_white.svg"
+                      alt="Иконка Фейсбук">Facebook</a>
+                </li>
+                <li>
+                  <a class="footer__column-link" href="https://vk.com/teamclubkrd" target="_blank">
+                    <img class="footer__social-icon" src="./images/vk_color_white.svg"
+                      alt="Иконка ВКонтакте">ВКонтакте</a>
+                </li>
+                <li>
+                  <a class="footer__column-link" href="#">
+                    <img class="footer__social-icon" src="./images/instagram_color_white.svg"
+                      alt="Иконка Инстограм">Instagram</a>
 
+                </li>
+              </ul>
+            </nav>
+            <iframe class="ya" src="https://yandex.ru/sprav/widget/rating-badge/209164181364" width="150" height="50"
+              frameborder="0"></iframe>
+          </div>
 
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-        <footer class="footer">
-            <div class="footer__columns">
-              <div class="footer__column footer__column_content_copyright">
-                <p class="footer__author">&copy; Гарик Камалян</p>
-              </div>
-              <div class="footer__column footer__column_content_info">
-                <h4 class="footer__column-heading">О Практикуме</h4>
-                <nav>
-                  <ul class="footer__column-links">
-                    <li>
-                      <a class="footer__column-link" href="#">Главная</a>
-                    </li>
-                    <li><a class="footer__column-link" href="#">Концепция</a>
-                    </li>
-                    <li><a class="footer__column-link" href="#">Наставники</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="footer__column footer__column_content_social">
-                <h4 class="footer__column-heading">Соцсети</h4>
-                <nav>
-                  <ul class="footer__column-links">
-                    <li>
-                      <a class="footer__column-link" href="#">
-                        <img class="footer__social-icon" src="./images/facebook_color_white.svg"
-                          alt="Иконка Фейсбук">Facebook</a>
-                    </li>
-                    <li>
-                      <a class="footer__column-link" href="#">
-                        <img class="footer__social-icon" src="./images/vk_color_white.svg"
-                          alt="Иконка ВКонтакте">ВКонтакте</a>
-                    </li>
-                    <li>
-                      <a class="footer__column-link" href="#">
-                        <img class="footer__social-icon" src="./images/instagram_color_white.svg"
-                          alt="Иконка Инстограм">Instagram</a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </footer>
+      </footer>
     </main>
-</div>
+  </div>
 </body>
 
 </html>

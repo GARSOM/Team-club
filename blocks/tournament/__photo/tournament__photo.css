@@ -1,0 +1,14 @@
+.tournament__photo{
+    margin-left: -65px;
+    width: 280px;
+    height: 550px;
+    align-self: flex-start;
+    transition: 1s;
+}
+.tournament__photo:first-child{
+    margin-left: 50px;
+
+}
+.tournament__photo:hover {
+    transform: scale(1.2); 
+   }

@@ -1,4 +1,10 @@
 .bar__link{
     color: white;
     text-decoration: none;
+    transition: ease 1s;
+    font-size: 32px;
+    margin-left: 90px;
+}
+.bar__link:hover{
+    opacity: 0.5;
 }

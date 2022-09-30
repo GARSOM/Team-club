@@ -1,0 +1,8 @@
+.zal__photo_1{
+    height: 197px;
+    width: 350px;
+    transition: 1s;
+}    
+.zal__photo_1:hover {
+ transform: scale(2.2); 
+}
